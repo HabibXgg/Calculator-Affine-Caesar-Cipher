@@ -1,38 +1,156 @@
-.App {
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f6f6f7;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  color: #000; /* Warna teks utama */
+}
+
+.img-container {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  text-align: center;
+  color: #333; /* Warna judul */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-left: 0.5rem;
+  background-color: #1f67a0; /* Warna tombol biru */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #1d3147; /* Warna tombol biru saat dihover */
+}
+
+.output {
+  margin-top: 20px;
+}
+
+.output-item {
+  margin-top: 1em;
+}
+
+.error {
+  color: #d9534f;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link {
+  color: #000b16;
+  transition: 1s;
+}
+
+.link:hover {
+  transform: scale(1.2, 1.2);
+  color: #5e6876; /* Warna link biru saat dihover */
+  border: #c6ced5;
+}
+
+.link::after {
+  color: #000b16;
+}
+
+.link:active {
+  color: #000b16;
+}
+
+/* Media Queries untuk Responsivitas */
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    margin: 10px;
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .img-container {
+    text-align: center;
   }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  label,
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  button {
+    margin-left: 0;
+    margin-top: 0.3em;
+    width: 100%;
+  }
+
+  footer {
+    margin-bottom: 1em;
+  }
+}
+
+nav {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #000; /* Warna teks navigasi */
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  color: #000; /* Warna teks daftar navigasi */
+}
+
+li {
+  font-size: 18px;
+  color: #000b16; /* Warna teks item daftar navigasi */
 }
